@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de notícias</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="cabecalho">
+                <img src="assets/images/logo.svg" alt="Logo">
+                <span id="menu-hamburguer" class="material-symbols-outlined" onclick="abrirMenu()">
+                    menu
+                </span>
+                <nav id="navegador-desktop">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Novas</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Categorias</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="navegador">
+                <span id="menu-close" class="material-symbols-outlined" onclick="abrirMenu()" on>
+                    close
+                </span>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Novas</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categorias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container grid-container">
+        <section id="secao-1">
+            <picture>
+                <source media="(min-width: 600px)" srcset="assets/images/image-web-3-desktop.jpg">
+                <img src="assets/images/image-web-3-mobile.jpg" alt="imagem web">
+            </picture>
+            <div id="secao-1-conteudo">
+                <h2>O brilho futuro da web 3.0 ?</h2>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit dolorum incidunt maiores provident quaerat, odit sit nisi illum magnam quod fugiat? Non nihil numquam veritatis natus quisquam quia eveniet.</p>
+                    <button type="button">Ler mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="novas">
+            <article>
+                <h2>New</h2>
+                <div>
+                    <h3>Hidrogênio vs Carro elétrico</h3>
+                    <p class="linha-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic possimus alias eos neque ducimus tenetur, enim laborum sint voluptate doloribus eligendi commodi voluptas. Vero blanditiis recusandae, molestiae vitae minima reprehenderit?</p>
+                </div>
+                <div>
+                    <h3>The Downsides of al Artistry</h3>
+                    <p class="linha-top">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At recusandae totam facilis doloremque architecto saepe dicta eveniet, dolorem perspiciatis nulla debitis exercitationem nobis sequi eum in laudantium illum magnam! Aliquid?</p>
+                </div>
+                <div>
+                    <h3>Is VC Funding Drying Up</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi repudiandae deleniti consectetur enim culpa in laboriosam reprehenderit nam, esse ratione aspernatur facilis natus similique. Hic voluptas ipsam nobis dicta officiis.</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="secao-3">
+                <img src="assets/images/image-retro-pcs.jpg" alt="Pc Retro">
+                <div>
+                    <h2>01</h2>
+                    <h3>Reviving Retro PCs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="secao-3">
+                <img src="assets/images/image-top-laptops.jpg" alt="Pc Retro">
+                <div>
+                    <h2>02</h2>
+                    <h3>Top 10 Laptops of 2022</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="secao-3">
+                <img src="assets/images/image-gaming-growth.jpg" alt="Pc Retro">
+                <div>
+                    <h2>03</h2>
+                    <h3>The Growth of Gaming</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
